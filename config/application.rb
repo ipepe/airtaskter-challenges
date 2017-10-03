@@ -18,7 +18,5 @@ module RailsAppStartingTemplate
     config.generators.helper = false
     config.generators.test_framework(:test_unit, fixture: false)
     config.generators.template_engine :slim
-
-
   end
 end

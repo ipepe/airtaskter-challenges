@@ -7,7 +7,7 @@ require 'capistrano/bundler'
 require 'capistrano/rbenv'
 require 'capistrano/passenger'
 
-require "capistrano/scm/git"
+require 'capistrano/scm/git'
 install_plugin Capistrano::SCM::Git
 
 # Loads custom tasks from `lib/capistrano/tasks' if you have any defined.

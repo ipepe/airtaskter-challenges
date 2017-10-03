@@ -11,15 +11,8 @@ html lang=I18n.locale
     meta name="apple-mobile-web-app-capable" content="yes"
     meta charset="utf-8"
     == stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
-    == javascript_include_tag 'application', 'data-turbolinks-track' => true
     == csrf_meta_tags
-
   body
-    == include_gon
-    == render 'layouts/navigation'
     == flash_messages
-    - if @without_container
+    .container
       == yield
-    - else
-      .container
-        == yield

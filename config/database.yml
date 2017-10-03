@@ -8,11 +8,11 @@ default: &default
 
 development:
   <<: *default
-  database: rails-app-starting-template_development
+  database: airtasker-challenges-dev
 
 test:
   <<: *default
-  database: rails-app-starting-template_test
+  database: airtasker-challenges-test
 
 production:
   adapter: postgresql
