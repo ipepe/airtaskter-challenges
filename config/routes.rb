@@ -1,3 +1,8 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :user_rate_limiters, only: [] do
+    member do
+      get 'consume_api'
+    end
+  end
+  root 'user_rate_limiters#index'
 end

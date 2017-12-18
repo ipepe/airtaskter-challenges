@@ -21,3 +21,6 @@
 
 en:
   hello: "Hello world"
+  rate_limit_exceeded: Rate limit exceeded. Try again in %{seconds} seconds
+  application:
+    title: RateLimiter
